@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-clinic-green: #22A225;
+  --color-clinic-teal: #00bfa5;
+  --color-clinic-dark: #1a1a1a;
+  --color-clinic-gray: #4d4d4d;
+  --color-clinic-light: #f9f9f9;
+  --color-clinic-off-white: #F9F7F2;
+  --color-clinic-gold: #C5A059;
+  --color-footer-gold: #DDA758;
+  --color-off-black: #1A1A1A;
+  --color-footer-cyan: #0BB9AA;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-clinic-dark bg-white;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.elementor-button {
+  @apply inline-flex items-center justify-center px-8 py-3 rounded-full font-medium transition-all duration-300;
+}
+
+.clinic-card {
+  @apply bg-white rounded-2xl overflow-hidden transition-all duration-700;
+}
+
+.text-shadow-glow {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-footer {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
